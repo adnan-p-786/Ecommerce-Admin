@@ -30,7 +30,7 @@ function Users() {
     </thead>
     <tbody>
       {users.map((user, index) => (
-        <tr key={index} className="hover:bg-slate-100">
+        <tr key={index} className="bg-white">
           <td className="border-2 p-2">{user.name}</td>
           <td className="border-2 p-2">{user.email}</td>
         </tr>

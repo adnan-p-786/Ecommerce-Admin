@@ -2,7 +2,7 @@ import React from 'react'
 import addProduct from "../assets/addproduct.png"
 import listProduct from "../assets/productlist.png"
 import user from "../assets/user.png"
-import order from "../assets/order.png"
+import cart from '../assets/cart.png'
 import { Link } from 'react-router-dom'
 
 function Sidebar() {
@@ -27,6 +27,13 @@ function Sidebar() {
             <button className="flex cursor-pointer items-center gap-2 bg-white hover:bg-gray-100 rounded-md h-14 w-40 xs:w-44 sm:w-48 medium-14 shadow-md">
                 <img className='h-10 w-10 ml-5' src={user} alt="Product List" />
                 <span className="text-gray-700 font-medium">Users</span>
+            </button>
+            </Link>
+
+            <Link to="/Cart">
+            <button className="flex cursor-pointer items-center gap-2 bg-white hover:bg-gray-100 rounded-md h-14 w-40 xs:w-44 sm:w-48 medium-14 shadow-md">
+                <img className='h-10 w-10 ml-5' src={cart} alt="Product List" />
+                <span className="text-gray-700 font-medium">Cart</span>
             </button>
             </Link>
             
